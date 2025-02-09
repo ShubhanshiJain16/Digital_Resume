@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubhanshi Jain - Digital Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.addEventListener("mouseover", function() {
+                    this.style.transform = "scale(1.02)";
+                    this.style.transition = "0.3s ease-in-out";
+                });
+                section.addEventListener("mouseout", function() {
+                    this.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            color: #ffffff;
+        }
+        section {
+            margin-top: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #333;
+            transition: transform 0.3s ease-in-out;
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .skills ul, .certifications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li, .certifications li {
+            background: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .project {
+            background: #222;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .project a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shubhanshi Jain</h1>
+            <p>Cybersecurity Enthusiast | Developer | Researcher</p>
+            <div class="contact">
+                <a href="mailto:shubhanshijain16@gmail.com">shubhanshijain16@gmail.com</a>
+                <a href="tel:7697312222">7697312222</a>
+                <a href="https://github.com/ShubhanshiJain16" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/shubhanshi-jain-186334246" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+        
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Pre-final year B.Tech student with expertise in developing secure web applications, implementing cybersecurity measures, and working with AI for anomaly detection. Strong foundation in programming, networking, and cryptography.</p>
+        </section>
+        
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C++, Python, JavaScript, Dart, SQL, Solidity</li>
+                <li><strong>Technologies:</strong> Linux, Wireshark, Nmap, Flutter, Docker, Kubernetes</li>
+                <li><strong>Frameworks:</strong> Node.js, React.js, MITRE ATT&CK Framework</li>
+            </ul>
+        </section>
+        
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Sir Padampat Singhania University, Udaipur</strong> (2022-2026) - B.Tech in Computer Science (CGPA: 8.0/10)</p>
+            <p><strong>IIT Madras</strong> (2023-Present) - Foundations in Data Science (CGPA: 7.6/10)</p>
+        </section>
+        
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Explainable AI for Anomaly Detection</h3>
+                <p>Designed an AI-powered anomaly detection framework with SHAP and LIME for interpretability.</p>
+                <a href="https://github.com/ShubhanshiJain16/XAI-for-Anomaly-Detection" target="_blank">GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Divine Dessert Treasury</h3>
+                <p>Developed a secure online ordering platform using React.js, Node.js, and Oracle SQL.</p>
+                <a href="https://github.com/ShubhanshiJain16/Divine-Dessert-Treasury" target="_blank">GitHub</a>
+            </div>
+        </section>
+        
+        <section class="certifications">
+            <h2>Courses & Certifications</h2>
+            <ul>
+                <li>Practical Cyber Security (NPTEL)</li>
+                <li>Crash Course on Python (Coursera)</li>
+                <li>Command Line Basics in Linux (Coursera)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
